@@ -82,39 +82,39 @@ h4,
 
 /* mobile styles */
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 1rem;
 }
 
-.site-nav{
+.site-nav {
   margin: 0 2rem;
 }
 
-.site-nav ul{
+.site-nav ul {
   display: none;
 }
 
-.site-nav h1{
+.site-nav h1 {
   grid-column: 1/4;
   padding-bottom: 1rem;
   border-bottom: 3px solid var(--primary);
 }
 
-#welcome{
+#welcome {
   padding: 0 2rem 2rem 2rem;
 }
 
-.welcome-text{
+.welcome-text {
   grid-column: 1/6;
 }
 
-.welcome-img{
+.welcome-img {
   grid-column: 6/9;
 }
 
-.welcome-img img{
+.welcome-img img {
   width: 200%;
 }
 
@@ -122,7 +122,7 @@ h4,
   margin: 2rem 0;
 }
 
-#portfolio{
+#portfolio {
   background: url(./assets/square_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -130,80 +130,81 @@ h4,
   padding: 3rem 2rem;
 }
 
-#portfolio h3{
+#portfolio h3 {
   margin-bottom: 0;
   text-align: center;
 }
 
-.projects a{
+.projects a {
   grid-column: 1/9;
   margin: 2rem 0;
   display: flex;
 }
 
-.projects a *{
+.projects a * {
   margin: 0 2rem;
   max-width: 40%;
   align-self: center;
 }
 
-.projects h4{
+.projects h4 {
   color: #9994f7;
 }
 
-#skills{
+#skills {
   padding: 3rem 2rem;
   background-color: #07083e;
 }
 
-#skills h3{
+#skills h3 {
   text-align: center;
 }
 
-#skills ul{
+#skills ul {
   margin: 4rem 0;
 }
 
-#skills li{
+#skills li {
   padding: 1rem;
   background: rgba(0, 0, 0, 0.2);
   grid-column: span 4;
   text-align: center;
 }
 
-#skills img{
+#skills img {
   height: 8rem;
   margin: 1rem auto;
 }
 
-#contact{
+#contact {
   padding: 3rem 2rem;
   background: #080936;
 }
 
-#contact h3, #contact p{
+#contact h3,
+#contact p {
   text-align: center;
   margin: 0;
 }
 
-#contact form{
+#contact form {
   width: 80%;
   max-width: 40rem;
   margin: 2rem auto;
   text-align: center;
-
 }
 
-#contact input, #contact textarea{
+#contact input,
+#contact textarea {
   width: 100%;
   margin: 1rem 0;
 }
 
-#contact .button{
+#contact .button {
   margin-top: 1rem;
 }
 
-footer{
+footer {
   padding: 3rem 2rem;
   background-color: #14153d;
   background-image: url(./assets/footer_image.png);
@@ -212,66 +213,66 @@ footer{
   background-position: top center;
 }
 
-footer .copyright{
+footer .copyright {
   grid-column: 1/3;
   font-size: 0.8em;
 }
 
-footer .social{
+footer .social {
   grid-column: 7/9;
   display: flex;
   justify-content: flex-end;
 }
 
-footer li{
+footer li {
   margin: 0 0.6rem;
 }
 
-footer img{
+footer img {
   width: 2rem;
 }
 /* small tablet styles  */
 @media screen and (min-width: 620px) {
-  .welcome-text{
+  .welcome-text {
     grid-column: 1/5;
   }
 
-  .welcome-img{
+  .welcome-img {
     grid-column: 5/9;
   }
 
-  .welcome-img img{
+  .welcome-img img {
     width: 100%;
   }
 
-  .projects{
+  .projects {
     margin-top: 4rem;
   }
 
-  .projects a{
+  .projects a {
     grid-column: span 4;
     display: block;
     margin: 2rem 0;
   }
 
-  .projects a:last-child{
+  .projects a:last-child {
     grid-column: 3/7;
   }
 
-  .projects a *{
+  .projects a * {
     margin: 1rem 20%;
     max-width: 60%;
   }
 
-  .projects h4{
+  .projects h4 {
     text-align: center;
   }
 
-  #skills{
+  #skills {
     padding: 3rem 10rem;
   }
 
-  footer{
+  footer {
     background-size: 20%;
   }
 }
@@ -281,6 +282,78 @@ footer img{
   body {
     font-size: 18px;
   }
+
+  .grid {
+    width: 100%;
+    max-width: 106rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .leading {
+    margin: 2rem 0;
+  }
+
+  .site-nav {
+    padding: 0 2rem;
+  }
+
+  .site-nav h1 {
+    grid-column: 1/3;
+  }
+
+  .site-nav ul {
+    display: flex;
+    grid-column: 6/9;
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+  .site-nav li {
+    margin-left: 2rem;
+  }
+
+  .welcome-text {
+    align-self: center;
+  }
+
+  #welcome {
+    padding-bottom: 4rem;
+  }
+
+  .projects a:nth-child(1){
+    grid-column: 2/4;
+  }
+
+  .projects a:nth-child(1){
+    grid-column: 4/6;
+    padding-top: 14rem;
+  }
+
+  .projects a:nth-child(1){
+    grid-column: 6/8;
+  }
+
+  .projects a *{
+    max-width: 80%;
+    margin: 1rem 10%;
+  }
+
+  #skills{
+    padding: 3rem 2rem;
+  }
+
+  #skills ul{
+    margin: 4rem auto;
+  }
+
+  #skills li{
+    grid-column: span 2;
+  }
+
+  footer{
+    padding: 4rem 2rem;
+  }
 }
 
 /* desktop styles */
@@ -288,4 +361,5 @@ footer img{
   body {
     font-size: 20px;
   }
+
 }
